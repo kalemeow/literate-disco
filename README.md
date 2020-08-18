@@ -3,6 +3,7 @@ Given an appropriately-formatted log file, this service will happily present a J
 
 # How to use
 The service is presented as a docker container.  To start it, run the following command:
-    docker run -d --name literate-disco -p 8080:8080 -v .:/data kalemeow/literate-disco:latest filename-to-parse.log
-    
+```
+docker run -d --name literate-disco -p 8080:8080 -v .:/data kalemeow/literate-disco:latest filename-to-parse.log
+```    
 Once the container is up and running, you can access the stats page at http://localhost:8080/stats .
